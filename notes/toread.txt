@@ -1,0 +1,8 @@
+one-vs-all or One-vs-rest(OvR)
+one-vs-one (OvO)
+Single Value Decomposition
+Moore-Penrose inverse
+independent and identically distributed (IID)
+
+Learning schedule (for stochastic gradient descent)
+

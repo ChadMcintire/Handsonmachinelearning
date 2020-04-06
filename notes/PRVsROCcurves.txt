@@ -1,0 +1,10 @@
+Since the ROC curve is so similar to the precision/recall (PR) curve, you may 
+wonder how to decide which one to use. As a rule of thumb, you should prefer 
+the PR curve whenever the positive class is rare or when you care more about 
+the false positives than the false negatives. Otherwise, use the ROC curve. 
+For example, looking at the previous ROC curve (and the ROC AUC score), 
+you may think that the classifier is really good. But this is mostly 
+because there are few positives (5s) compared to the negatives (non-5s). 
+In contrast, the PR curve makes it clear that the classifier has room 
+for improvement (the curve could be closer to the top-right corner).
+

@@ -1,0 +1,18 @@
+When the cost function is convex and its slope does not change abruptly (as is the case for the MSE cost function), Batch Gradient Descent with a fixed learning rate will eventually converge to the optimal solution, but you may have to wait a while: it can take O(1/ϵ) iterations to reach the optimum within a range of ϵ, depending on the shape of the cost function. If you divide the tolerance by 10 to have a more precise solution, then the algorithm may have to run about 10 times longer.
+
+(For stochasic gradient descent)
+Note that since instances are picked randomly, some instances may be picked several times per epoch, while others may not be picked at all. If you want to be sure that the algorithm goes through every instance at each epoch, another approach is to shuffle the training set (making sure to shuffle the input features and the labels jointly), then go through it instance by instance, then shuffle it again, and so on. However, this approach generally converges more slowly.
+
+When using Stochastic Gradient Descent, the training instances must be independent and identically distributed (IID) to ensure that the parameters get pulled toward the global optimum, on average. A simple way to ensure this is to shuffle the instances during training (e.g., pick each instance randomly, or shuffle the training set at the beginning of each epoch). If you do not shuffle the instances—for example, if the instances are sorted by label—then SGD will start by optimizing for one label, then the next, and so on, and it will not settle close to the global minimum.
+
+Algorithm |	Large m | Out-of-core support | Large n | Hyperparams | Scaling required
+
+Normal Equation   Fast No Slow 0 No
+
+SVD               Fast No Slow 0 No
+
+Batch GD          Slow No Fast 2 Yes 
+
+Stochastic GD     Fast Yes Fast ≥2 Yes
+
+Mini-batch GD     Fast Yes Fast ≥2 Yes

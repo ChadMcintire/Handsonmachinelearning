@@ -1,0 +1,17 @@
+1. It shows the tradeoff between sensitivity and specificity (any increase in sensitivity will be accompanied by a decrease in specificity).
+2. The closer the curve follows the left-hand border and then the top border of the ROC space, the more accurate the test.
+3. The closer the curve comes to the 45-degree diagonal of the ROC space, the less accurate the test.
+4. The slope of the tangent line at a cutpoint gives the likelihood ratio (LR) for that value of the test. 
+   You can check this out on the graph above. Recall that the LR for T4 < 5 is 52. This corresponds to the 
+   far left, steep portion of the curve. The LR for T4 > 9 is 0.2. This corresponds to the far right, 
+   nearly horizontal portion of the curve.
+5. The area under the curve is a measure of text accuracy.
+
+Once again there is a trade-off: the higher the recall (TPR), the more false positives (FPR) the classifier produces.
+
+The 45' line represents a purely random classifier.
+
+The closer the area under the curve is to 1 the better the classifier
+
+#references
+http://gim.unmc.edu/dxtests/roc2.htm

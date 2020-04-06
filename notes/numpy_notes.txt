@@ -1,0 +1,19 @@
+Numpy ravel():
+
+ravel() function simply returns a flattened view/reference of Numpy array.
+
+If you try to modify the flattened view then you end up with that same change in the original array.
+
+ravel() does not occupy memory so we can say that it is faster than flatten()
+
+library level function
+
+Numpy flatten()
+
+flatten() function returns a flattened copy of Numpy array.
+
+Changes made to flattened array is not reflected back to the original array.
+
+flatten() occupies memory so it is considered slower than ravel() function.
+
+Flatten is a method of an ndarray object.

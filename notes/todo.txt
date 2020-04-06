@@ -1,0 +1,3 @@
+map gradient descent like on this page, especially the red line graph
+
+https://towardsdatascience.com/gradient-descent-in-python-a0d07285742f
